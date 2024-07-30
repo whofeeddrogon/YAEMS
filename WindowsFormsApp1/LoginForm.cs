@@ -81,6 +81,9 @@ namespace WindowsFormsApp1
                             if (table.Rows.Count >= 1)
                             {
                                 MessageBox.Show("Login Successful!", "Information Massage", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                MainForm mainForm = new MainForm();
+                                mainForm.Show();
+                                this.Hide();
                             }
                             else
                             {

@@ -178,6 +178,10 @@ namespace WindowsFormsApp1
             // addEmployee_gender
             // 
             this.addEmployee_gender.FormattingEnabled = true;
+            this.addEmployee_gender.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Other"});
             this.addEmployee_gender.Location = new System.Drawing.Point(136, 115);
             this.addEmployee_gender.Name = "addEmployee_gender";
             this.addEmployee_gender.Size = new System.Drawing.Size(142, 24);
@@ -186,6 +190,11 @@ namespace WindowsFormsApp1
             // addEmployee_position
             // 
             this.addEmployee_position.FormattingEnabled = true;
+            this.addEmployee_position.Items.AddRange(new object[] {
+            "Software Developer",
+            "IT",
+            "Management",
+            "HR"});
             this.addEmployee_position.Location = new System.Drawing.Point(436, 66);
             this.addEmployee_position.Name = "addEmployee_position";
             this.addEmployee_position.Size = new System.Drawing.Size(142, 24);

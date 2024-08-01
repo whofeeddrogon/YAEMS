@@ -55,6 +55,7 @@ namespace WindowsFormsApp1
                         string checkEmID = "SELECT COUNT(*) FROM employees WHERE employee_id = @emID";
                         using (SqlCommand checkEm = new SqlCommand(checkEmID, connect))
                         {
+                            checkEm.Parameters.AddWithValue("@emID", addEmployee_id.Text.Trim());
                             int count = (int)checkEm.ExecuteScalar();
 
                             if (count > 1)
@@ -64,16 +65,17 @@ namespace WindowsFormsApp1
                             else
                             {
                                 DateTime today = DateTime.Today;
-                                string insertData = "INSERT INTO employees (employee_id, full_name, gender, contact_number, position, insert_date, status) VALUES (@employeeID, @fullName, @gender, @contactNumber, @position, @insertDate, @status)";
+                                string insertData = "INSERT INTO employees (employee_id, full_name, gender, contact_number, position, salary, insert_date, status) VALUES (@employeeID, @fullName, @gender, @contactNumber, @position, @salary, @insertDate, @status)";
                                 
                                 using (SqlCommand cmd = new SqlCommand(insertData, connect))
                                 {
                                     cmd.Parameters.AddWithValue("@employeeId", addEmployee_id.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@full_name", addEmployee_fullName.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@fullName", addEmployee_fullName.Text.Trim());
                                     cmd.Parameters.AddWithValue("@gender", addEmployee_gender.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@contact_number", addEmployee_phoneNumber.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@contactNumber", addEmployee_phoneNumber.Text.Trim());
                                     cmd.Parameters.AddWithValue("@position", addEmployee_position.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@insert_date", today);
+                                    cmd.Parameters.AddWithValue("@insertDate", today);
+                                    cmd.Parameters.AddWithValue("@salary", 0);
                                     cmd.Parameters.AddWithValue("@status", addEmployee_status.Text.Trim());
 
                                     cmd.ExecuteNonQuery();
@@ -85,11 +87,11 @@ namespace WindowsFormsApp1
                     }
                     catch(Exception ex)
                     {
-
+                        MessageBox.Show("Error: " + ex, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     finally
                     {
-
+                        connect.Close();
                     }
                 }
             }

@@ -221,6 +221,7 @@ namespace WindowsFormsApp1
             // addEmployee_add
             // 
             this.addEmployee_add.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.addEmployee_add.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addEmployee_add.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addEmployee_add.ForeColor = System.Drawing.SystemColors.Control;
             this.addEmployee_add.Location = new System.Drawing.Point(111, 160);
@@ -234,6 +235,7 @@ namespace WindowsFormsApp1
             // addEmployee_update
             // 
             this.addEmployee_update.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.addEmployee_update.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addEmployee_update.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addEmployee_update.ForeColor = System.Drawing.SystemColors.Control;
             this.addEmployee_update.Location = new System.Drawing.Point(235, 160);
@@ -246,6 +248,7 @@ namespace WindowsFormsApp1
             // addEmployee_delete
             // 
             this.addEmployee_delete.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.addEmployee_delete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addEmployee_delete.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addEmployee_delete.ForeColor = System.Drawing.SystemColors.Control;
             this.addEmployee_delete.Location = new System.Drawing.Point(354, 160);
@@ -258,6 +261,7 @@ namespace WindowsFormsApp1
             // addEmployee_clear
             // 
             this.addEmployee_clear.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.addEmployee_clear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addEmployee_clear.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addEmployee_clear.ForeColor = System.Drawing.SystemColors.Control;
             this.addEmployee_clear.Location = new System.Drawing.Point(473, 160);

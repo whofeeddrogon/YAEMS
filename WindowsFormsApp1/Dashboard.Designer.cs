@@ -49,6 +49,7 @@ namespace WindowsFormsApp1
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
@@ -60,6 +61,7 @@ namespace WindowsFormsApp1
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Location = new System.Drawing.Point(26, 199);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(704, 315);
@@ -68,6 +70,7 @@ namespace WindowsFormsApp1
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Indigo;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(25, 18);
@@ -78,6 +81,7 @@ namespace WindowsFormsApp1
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Indigo;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Location = new System.Drawing.Point(252, 18);
@@ -88,6 +92,7 @@ namespace WindowsFormsApp1
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Indigo;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Location = new System.Drawing.Point(479, 18);

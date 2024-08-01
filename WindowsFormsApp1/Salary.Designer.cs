@@ -52,6 +52,7 @@ namespace WindowsFormsApp1
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
@@ -72,6 +73,7 @@ namespace WindowsFormsApp1
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(268, 22);
@@ -93,6 +95,7 @@ namespace WindowsFormsApp1
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Location = new System.Drawing.Point(20, 59);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(427, 415);

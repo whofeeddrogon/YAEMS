@@ -26,5 +26,18 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void addEmployee_add_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void displayEmployeeData()
+        {
+            EmployeeData ed = new EmployeeData();
+            List<EmployeeData> listData = ed.employeeListData();
+
+            dataGridView1.DataSource = listData;
+        }
     }
 }

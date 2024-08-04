@@ -244,6 +244,7 @@ namespace WindowsFormsApp1
             this.addEmployee_update.TabIndex = 17;
             this.addEmployee_update.Text = "Update";
             this.addEmployee_update.UseVisualStyleBackColor = false;
+            this.addEmployee_update.Click += new System.EventHandler(this.addEmployee_update_Click);
             // 
             // addEmployee_delete
             // 
@@ -257,6 +258,7 @@ namespace WindowsFormsApp1
             this.addEmployee_delete.TabIndex = 18;
             this.addEmployee_delete.Text = "Delete";
             this.addEmployee_delete.UseVisualStyleBackColor = false;
+            this.addEmployee_delete.Click += new System.EventHandler(this.addEmployee_delete_Click);
             // 
             // addEmployee_clear
             // 
@@ -270,6 +272,7 @@ namespace WindowsFormsApp1
             this.addEmployee_clear.TabIndex = 19;
             this.addEmployee_clear.Text = "Clear";
             this.addEmployee_clear.UseVisualStyleBackColor = false;
+            this.addEmployee_clear.Click += new System.EventHandler(this.addEmployee_clear_Click);
             // 
             // dataGridView1
             // 

@@ -70,7 +70,7 @@ namespace WindowsFormsApp1
                     try
                     {
                         connect.Open();
-                        string checkEmID = "SELECT COUNT(*) FROM employees WHERE employee_id = @emID";
+                        string checkEmID = "SELECT COUNT(*) FROM employees WHERE employee_id = @emID AND delete_date IS NULL";
                         using (SqlCommand checkEm = new SqlCommand(checkEmID, connect))
                         {
                             checkEm.Parameters.AddWithValue("@emID", addEmployee_id.Text.Trim());

@@ -34,17 +34,15 @@ namespace WindowsFormsApp1
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.salary_employeeID = new System.Windows.Forms.TextBox();
+            this.salary_name = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.salary_position = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.salary_salary = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.salary_updateBtn = new System.Windows.Forms.Button();
+            this.salary_clearBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -53,17 +51,15 @@ namespace WindowsFormsApp1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.salary_clearBtn);
+            this.panel1.Controls.Add(this.salary_updateBtn);
+            this.panel1.Controls.Add(this.salary_salary);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.salary_position);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.salary_name);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.salary_employeeID);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(16, 22);
             this.panel1.Name = "panel1";
@@ -111,21 +107,23 @@ namespace WindowsFormsApp1
             this.label5.TabIndex = 6;
             this.label5.Text = "Employee ID:";
             // 
-            // textBox2
+            // salary_employeeID
             // 
-            this.textBox2.Location = new System.Drawing.Point(20, 62);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(190, 25);
-            this.textBox2.TabIndex = 11;
+            this.salary_employeeID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salary_employeeID.Location = new System.Drawing.Point(20, 62);
+            this.salary_employeeID.Multiline = true;
+            this.salary_employeeID.Name = "salary_employeeID";
+            this.salary_employeeID.Size = new System.Drawing.Size(190, 25);
+            this.salary_employeeID.TabIndex = 11;
             // 
-            // textBox1
+            // salary_name
             // 
-            this.textBox1.Location = new System.Drawing.Point(20, 130);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(190, 25);
-            this.textBox1.TabIndex = 13;
+            this.salary_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salary_name.Location = new System.Drawing.Point(20, 130);
+            this.salary_name.Multiline = true;
+            this.salary_name.Name = "salary_name";
+            this.salary_name.Size = new System.Drawing.Size(190, 25);
+            this.salary_name.TabIndex = 13;
             // 
             // label2
             // 
@@ -137,13 +135,14 @@ namespace WindowsFormsApp1
             this.label2.TabIndex = 12;
             this.label2.Text = "Full Name:";
             // 
-            // textBox3
+            // salary_position
             // 
-            this.textBox3.Location = new System.Drawing.Point(20, 199);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(190, 25);
-            this.textBox3.TabIndex = 15;
+            this.salary_position.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salary_position.Location = new System.Drawing.Point(20, 199);
+            this.salary_position.Multiline = true;
+            this.salary_position.Name = "salary_position";
+            this.salary_position.Size = new System.Drawing.Size(190, 25);
+            this.salary_position.TabIndex = 15;
             // 
             // label3
             // 
@@ -155,13 +154,14 @@ namespace WindowsFormsApp1
             this.label3.TabIndex = 14;
             this.label3.Text = "Position:";
             // 
-            // textBox4
+            // salary_salary
             // 
-            this.textBox4.Location = new System.Drawing.Point(20, 264);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(190, 25);
-            this.textBox4.TabIndex = 17;
+            this.salary_salary.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salary_salary.Location = new System.Drawing.Point(20, 264);
+            this.salary_salary.Multiline = true;
+            this.salary_salary.Name = "salary_salary";
+            this.salary_salary.Size = new System.Drawing.Size(190, 25);
+            this.salary_salary.TabIndex = 17;
             // 
             // label4
             // 
@@ -173,53 +173,29 @@ namespace WindowsFormsApp1
             this.label4.TabIndex = 16;
             this.label4.Text = "Salary:";
             // 
-            // button1
+            // salary_updateBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(20, 389);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 33);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
+            this.salary_updateBtn.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.salary_updateBtn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salary_updateBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.salary_updateBtn.Location = new System.Drawing.Point(20, 425);
+            this.salary_updateBtn.Name = "salary_updateBtn";
+            this.salary_updateBtn.Size = new System.Drawing.Size(94, 33);
+            this.salary_updateBtn.TabIndex = 19;
+            this.salary_updateBtn.Text = "Update";
+            this.salary_updateBtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // salary_clearBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(116, 389);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 33);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(20, 428);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 33);
-            this.button3.TabIndex = 20;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4.Location = new System.Drawing.Point(116, 428);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(94, 33);
-            this.button4.TabIndex = 21;
-            this.button4.Text = "Clear";
-            this.button4.UseVisualStyleBackColor = false;
+            this.salary_clearBtn.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.salary_clearBtn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salary_clearBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.salary_clearBtn.Location = new System.Drawing.Point(116, 425);
+            this.salary_clearBtn.Name = "salary_clearBtn";
+            this.salary_clearBtn.Size = new System.Drawing.Size(94, 33);
+            this.salary_clearBtn.TabIndex = 21;
+            this.salary_clearBtn.Text = "Clear";
+            this.salary_clearBtn.UseVisualStyleBackColor = false;
             // 
             // Salary
             // 
@@ -245,16 +221,14 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox salary_salary;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox salary_position;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox salary_name;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox salary_employeeID;
+        private System.Windows.Forms.Button salary_clearBtn;
+        private System.Windows.Forms.Button salary_updateBtn;
     }
 }

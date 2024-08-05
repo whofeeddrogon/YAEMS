@@ -37,9 +37,9 @@ namespace WindowsFormsApp1
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.dashboard_TE = new System.Windows.Forms.Label();
+            this.dashboard_AE = new System.Windows.Forms.Label();
+            this.dashboard_IE = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -71,7 +71,7 @@ namespace WindowsFormsApp1
             // 
             this.panel3.BackColor = System.Drawing.Color.Indigo;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.dashboard_TE);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(25, 18);
             this.panel3.Name = "panel3";
@@ -82,7 +82,7 @@ namespace WindowsFormsApp1
             // 
             this.panel4.BackColor = System.Drawing.Color.Indigo;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.dashboard_AE);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Location = new System.Drawing.Point(252, 18);
             this.panel4.Name = "panel4";
@@ -93,7 +93,7 @@ namespace WindowsFormsApp1
             // 
             this.panel5.BackColor = System.Drawing.Color.Indigo;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.dashboard_IE);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Location = new System.Drawing.Point(479, 18);
             this.panel5.Name = "panel5";
@@ -133,38 +133,38 @@ namespace WindowsFormsApp1
             this.label3.TabIndex = 2;
             this.label3.Text = "Inactive Employees";
             // 
-            // label5
+            // dashboard_TE
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(152, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(30, 34);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "0";
+            this.dashboard_TE.AutoSize = true;
+            this.dashboard_TE.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard_TE.ForeColor = System.Drawing.SystemColors.Control;
+            this.dashboard_TE.Location = new System.Drawing.Point(152, 16);
+            this.dashboard_TE.Name = "dashboard_TE";
+            this.dashboard_TE.Size = new System.Drawing.Size(30, 34);
+            this.dashboard_TE.TabIndex = 2;
+            this.dashboard_TE.Text = "0";
             // 
-            // label4
+            // dashboard_AE
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(149, 16);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 34);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "0";
+            this.dashboard_AE.AutoSize = true;
+            this.dashboard_AE.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard_AE.ForeColor = System.Drawing.SystemColors.Control;
+            this.dashboard_AE.Location = new System.Drawing.Point(149, 16);
+            this.dashboard_AE.Name = "dashboard_AE";
+            this.dashboard_AE.Size = new System.Drawing.Size(30, 34);
+            this.dashboard_AE.TabIndex = 3;
+            this.dashboard_AE.Text = "0";
             // 
-            // label6
+            // dashboard_IE
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(156, 16);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(30, 34);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "0";
+            this.dashboard_IE.AutoSize = true;
+            this.dashboard_IE.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard_IE.ForeColor = System.Drawing.SystemColors.Control;
+            this.dashboard_IE.Location = new System.Drawing.Point(156, 16);
+            this.dashboard_IE.Name = "dashboard_IE";
+            this.dashboard_IE.Size = new System.Drawing.Size(30, 34);
+            this.dashboard_IE.TabIndex = 4;
+            this.dashboard_IE.Text = "0";
             // 
             // Dashboard
             // 
@@ -193,11 +193,11 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label dashboard_IE;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label dashboard_AE;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label dashboard_TE;
         private System.Windows.Forms.Label label1;
     }
 }

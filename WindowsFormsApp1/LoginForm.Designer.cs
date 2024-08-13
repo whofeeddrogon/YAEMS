@@ -194,10 +194,10 @@ namespace WindowsFormsApp1
             this.pictureBox1.BackColor = System.Drawing.Color.SlateBlue;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.pngkey_com_pepsico_logo_png_500989;
-            this.pictureBox1.Location = new System.Drawing.Point(46, 47);
+            this.pictureBox1.Location = new System.Drawing.Point(46, 36);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(158, 136);
+            this.pictureBox1.Size = new System.Drawing.Size(158, 147);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;

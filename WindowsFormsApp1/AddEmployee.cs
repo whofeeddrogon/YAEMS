@@ -15,7 +15,13 @@ namespace WindowsFormsApp1
     public partial class AddEmployee : UserControl
     {
         SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\berkayb\Documents\employee.mdf;Integrated Security=True;Connect Timeout=30");
+        public AddEmployee()
+        {
+            InitializeComponent();
 
+            //TO DISPLAY THE DATA FROM DATABASE TO DATA GRID VIEW
+            displayEmployeeData();
+        }
         public void displayEmployeeData()
         {
             EmployeeData ed = new EmployeeData();
@@ -24,22 +30,14 @@ namespace WindowsFormsApp1
             dataGridView1.DataSource = listData;
         }
 
-        public AddEmployee()
+        public void RefreshData()
         {
-            InitializeComponent();
-
-            //TO DISPLAY THE DATA FROM DATABASE TO DATA GRID VIEW
+            if (InvokeRequired)
+            {
+                Invoke((MethodInvoker)RefreshData);
+                return;
+            }
             displayEmployeeData();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         public void clearFields()
@@ -223,7 +221,7 @@ namespace WindowsFormsApp1
 
                             displayEmployeeData();
 
-                            MessageBox.Show("Update successfully!"
+                            MessageBox.Show("Delete successfull!"
                                 , "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                             clearFields();
@@ -245,6 +243,20 @@ namespace WindowsFormsApp1
                         , "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
+            }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex != -1)
+            {
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                addEmployee_id.Text = row.Cells[1].Value.ToString();
+                addEmployee_fullName.Text = row.Cells[2].Value.ToString();
+                addEmployee_gender.Text = row.Cells[3].Value.ToString();
+                addEmployee_phoneNumber.Text = row.Cells[4].Value.ToString();
+                addEmployee_position.Text = row.Cells[5].Value.ToString();
+                addEmployee_status.Text = row.Cells[6].Value.ToString();
             }
         }
     }

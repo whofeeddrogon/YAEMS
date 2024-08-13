@@ -17,9 +17,16 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        public void RefreshData()
         {
+            if (InvokeRequired)
+            {
+                Invoke((MethodInvoker)RefreshData);
+                return;
+            }
 
+            //displayEmployees();
+            //disableFields();
         }
     }
 }

@@ -63,6 +63,16 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap anonim_sirket_nedir_1 {
+            get {
+                object obj = ResourceManager.GetObject("anonim-sirket-nedir-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngkey_com_pepsico_logo_png_500989 {
             get {
                 object obj = ResourceManager.GetObject("pngkey.com-pepsico-logo-png-500989", resourceCulture);

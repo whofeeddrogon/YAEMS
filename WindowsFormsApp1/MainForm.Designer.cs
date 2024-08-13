@@ -30,23 +30,23 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.exit = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.exit = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dashboard_btn = new System.Windows.Forms.Button();
-            this.addEmployee_btn = new System.Windows.Forms.Button();
-            this.salary_btn = new System.Windows.Forms.Button();
             this.logout_btn = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.salary1 = new WindowsFormsApp1.Salary();
+            this.salary_btn = new System.Windows.Forms.Button();
+            this.addEmployee_btn = new System.Windows.Forms.Button();
+            this.dashboard_btn = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.addEmployee1 = new WindowsFormsApp1.AddEmployee();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.dashboard1 = new WindowsFormsApp1.Dashboard();
+            this.addEmployee1 = new WindowsFormsApp1.AddEmployee();
+            this.salary1 = new WindowsFormsApp1.Salary();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,6 +60,17 @@ namespace WindowsFormsApp1
             this.panel1.Size = new System.Drawing.Size(1049, 47);
             this.panel1.TabIndex = 0;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(12, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(242, 21);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Empleyee Management System";
+            // 
             // exit
             // 
             this.exit.AutoSize = true;
@@ -72,17 +83,6 @@ namespace WindowsFormsApp1
             this.exit.TabIndex = 1;
             this.exit.Text = "X";
             this.exit.Click += new System.EventHandler(this.exit_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(12, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(242, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Empleyee Management System";
             // 
             // panel2
             // 
@@ -100,43 +100,18 @@ namespace WindowsFormsApp1
             this.panel2.Size = new System.Drawing.Size(287, 539);
             this.panel2.TabIndex = 1;
             // 
-            // label3
+            // logout_btn
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(69, 189);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(144, 24);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Welcome, User";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // dashboard_btn
-            // 
-            this.dashboard_btn.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.dashboard_btn.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dashboard_btn.ForeColor = System.Drawing.SystemColors.Control;
-            this.dashboard_btn.Location = new System.Drawing.Point(45, 254);
-            this.dashboard_btn.Name = "dashboard_btn";
-            this.dashboard_btn.Size = new System.Drawing.Size(200, 50);
-            this.dashboard_btn.TabIndex = 2;
-            this.dashboard_btn.Text = "DASHBOARD";
-            this.dashboard_btn.UseVisualStyleBackColor = false;
-            this.dashboard_btn.Click += new System.EventHandler(this.dashboard_btn_Click);
-            // 
-            // addEmployee_btn
-            // 
-            this.addEmployee_btn.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.addEmployee_btn.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addEmployee_btn.ForeColor = System.Drawing.SystemColors.Control;
-            this.addEmployee_btn.Location = new System.Drawing.Point(45, 310);
-            this.addEmployee_btn.Name = "addEmployee_btn";
-            this.addEmployee_btn.Size = new System.Drawing.Size(200, 50);
-            this.addEmployee_btn.TabIndex = 3;
-            this.addEmployee_btn.Text = "ADD EMPLOYEE";
-            this.addEmployee_btn.UseVisualStyleBackColor = false;
-            this.addEmployee_btn.Click += new System.EventHandler(this.addEmployee_btn_Click);
+            this.logout_btn.AutoSize = true;
+            this.logout_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logout_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout_btn.ForeColor = System.Drawing.SystemColors.Control;
+            this.logout_btn.Location = new System.Drawing.Point(23, 497);
+            this.logout_btn.Name = "logout_btn";
+            this.logout_btn.Size = new System.Drawing.Size(74, 20);
+            this.logout_btn.TabIndex = 5;
+            this.logout_btn.Text = "Sign Out";
+            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
             // 
             // salary_btn
             // 
@@ -151,18 +126,52 @@ namespace WindowsFormsApp1
             this.salary_btn.UseVisualStyleBackColor = false;
             this.salary_btn.Click += new System.EventHandler(this.salary_btn_Click);
             // 
-            // logout_btn
+            // addEmployee_btn
             // 
-            this.logout_btn.AutoSize = true;
-            this.logout_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logout_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logout_btn.ForeColor = System.Drawing.SystemColors.Control;
-            this.logout_btn.Location = new System.Drawing.Point(23, 497);
-            this.logout_btn.Name = "logout_btn";
-            this.logout_btn.Size = new System.Drawing.Size(74, 20);
-            this.logout_btn.TabIndex = 5;
-            this.logout_btn.Text = "Sign Out";
-            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
+            this.addEmployee_btn.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.addEmployee_btn.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addEmployee_btn.ForeColor = System.Drawing.SystemColors.Control;
+            this.addEmployee_btn.Location = new System.Drawing.Point(45, 310);
+            this.addEmployee_btn.Name = "addEmployee_btn";
+            this.addEmployee_btn.Size = new System.Drawing.Size(200, 50);
+            this.addEmployee_btn.TabIndex = 3;
+            this.addEmployee_btn.Text = "ADD EMPLOYEE";
+            this.addEmployee_btn.UseVisualStyleBackColor = false;
+            this.addEmployee_btn.Click += new System.EventHandler(this.addEmployee_btn_Click);
+            // 
+            // dashboard_btn
+            // 
+            this.dashboard_btn.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.dashboard_btn.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard_btn.ForeColor = System.Drawing.SystemColors.Control;
+            this.dashboard_btn.Location = new System.Drawing.Point(45, 254);
+            this.dashboard_btn.Name = "dashboard_btn";
+            this.dashboard_btn.Size = new System.Drawing.Size(200, 50);
+            this.dashboard_btn.TabIndex = 2;
+            this.dashboard_btn.Text = "DASHBOARD";
+            this.dashboard_btn.UseVisualStyleBackColor = false;
+            this.dashboard_btn.Click += new System.EventHandler(this.dashboard_btn_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(69, 189);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(144, 24);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Welcome, User";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.pngkey_com_pepsico_logo_png_500989;
+            this.pictureBox1.Location = new System.Drawing.Point(66, 28);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(147, 146);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panel3
             // 
@@ -175,23 +184,13 @@ namespace WindowsFormsApp1
             this.panel3.Size = new System.Drawing.Size(762, 539);
             this.panel3.TabIndex = 2;
             // 
-            // salary1
+            // dashboard1
             // 
-            this.salary1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.salary1.Location = new System.Drawing.Point(0, 0);
-            this.salary1.Name = "salary1";
-            this.salary1.Size = new System.Drawing.Size(762, 539);
-            this.salary1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.pngkey_com_pepsico_logo_png_500989;
-            this.pictureBox1.Location = new System.Drawing.Point(66, 28);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(147, 146);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.dashboard1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.dashboard1.Location = new System.Drawing.Point(0, 0);
+            this.dashboard1.Name = "dashboard1";
+            this.dashboard1.Size = new System.Drawing.Size(762, 539);
+            this.dashboard1.TabIndex = 2;
             // 
             // addEmployee1
             // 
@@ -201,13 +200,13 @@ namespace WindowsFormsApp1
             this.addEmployee1.Size = new System.Drawing.Size(762, 539);
             this.addEmployee1.TabIndex = 1;
             // 
-            // dashboard1
+            // salary1
             // 
-            this.dashboard1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.dashboard1.Location = new System.Drawing.Point(0, 0);
-            this.dashboard1.Name = "dashboard1";
-            this.dashboard1.Size = new System.Drawing.Size(762, 539);
-            this.dashboard1.TabIndex = 2;
+            this.salary1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.salary1.Location = new System.Drawing.Point(0, 0);
+            this.salary1.Name = "salary1";
+            this.salary1.Size = new System.Drawing.Size(762, 539);
+            this.salary1.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -225,8 +224,8 @@ namespace WindowsFormsApp1
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

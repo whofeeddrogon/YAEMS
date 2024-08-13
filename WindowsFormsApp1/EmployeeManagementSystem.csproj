@@ -129,5 +129,8 @@
   <ItemGroup>
     <None Include="Resources\pngkey.com-pepsico-logo-png-500989.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anonim-sirket-nedir-11.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

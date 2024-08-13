@@ -12,13 +12,15 @@ namespace WindowsFormsApp1
     {
 
         public int ID { set; get; }
+        public string EmployeeID { set; get; }
         public string Name { set; get; }
         public string Gender { set; get; }
-        public string EmployeeID { set; get; }
         public string Contact { set; get; }
-        public int Salary { set; get; }
         public string Position { set; get; }
         public string Status { set; get; }
+        public int Salary { set; get; }
+        
+        
 
 
         SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\berkayb\Documents\employee.mdf;Integrated Security=True;Connect Timeout=30");
@@ -27,7 +29,7 @@ namespace WindowsFormsApp1
         {
             List<EmployeeData> listdata = new List<EmployeeData>();
 
-            if (connect.State != ConnectionState.Open)
+            if (true)
             {
                 try
                 {
@@ -47,7 +49,7 @@ namespace WindowsFormsApp1
                             ed.EmployeeID = reader["employee_id"].ToString();
                             ed.Name = reader["full_name"].ToString();
                             ed.Gender = reader["gender"].ToString();
-                            ed.Contact = reader["contact_nummer"].ToString();
+                            ed.Contact = reader["contact_number"].ToString();
                             ed.Position = reader["position"].ToString();
                             ed.Salary = (int) reader["salary"];
                             ed.Status = reader["status"].ToString();

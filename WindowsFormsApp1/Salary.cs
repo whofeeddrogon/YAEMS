@@ -44,10 +44,10 @@ namespace WindowsFormsApp1
 
         public void displayEmployees()
         {
-            //SalaryData ed = new SalaryData();
-            //List<SalaryData> listData = ed.salaryEmployeeListData();
+            SalaryData ed = new SalaryData();
+            List<SalaryData> listData = ed.salaryEmployeeListData();
 
-            //dataGridView1.DataSource = listData;
+            dataGridView2.DataSource = listData;
         }
 
         public void clearFields()
@@ -63,11 +63,11 @@ namespace WindowsFormsApp1
             clearFields();
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex != -1)
             {
-                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                DataGridViewRow row = dataGridView2.Rows[e.RowIndex];
                 salary_employeeID.Text = row.Cells[0].Value.ToString();
                 salary_name.Text = row.Cells[1].Value.ToString();
                 salary_position.Text = row.Cells[4].Value.ToString();
@@ -138,6 +138,11 @@ namespace WindowsFormsApp1
                     , MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

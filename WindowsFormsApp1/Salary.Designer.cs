@@ -41,11 +41,11 @@ namespace WindowsFormsApp1
             this.salary_employeeID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -78,6 +78,7 @@ namespace WindowsFormsApp1
             this.salary_clearBtn.TabIndex = 21;
             this.salary_clearBtn.Text = "Clear";
             this.salary_clearBtn.UseVisualStyleBackColor = false;
+            this.salary_clearBtn.Click += new System.EventHandler(this.salary_clearBtn_Click);
             // 
             // salary_updateBtn
             // 
@@ -90,6 +91,7 @@ namespace WindowsFormsApp1
             this.salary_updateBtn.TabIndex = 19;
             this.salary_updateBtn.Text = "Update";
             this.salary_updateBtn.UseVisualStyleBackColor = false;
+            this.salary_updateBtn.Click += new System.EventHandler(this.salary_updateBtn_Click);
             // 
             // salary_salary
             // 
@@ -171,12 +173,25 @@ namespace WindowsFormsApp1
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.dataGridView2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(268, 22);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(471, 494);
             this.panel2.TabIndex = 1;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(20, 62);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(426, 396);
+            this.dataGridView2.TabIndex = 3;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
@@ -187,16 +202,6 @@ namespace WindowsFormsApp1
             this.label1.Size = new System.Drawing.Size(117, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "Employees";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 62);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(426, 396);
-            this.dataGridView1.TabIndex = 3;
             // 
             // Salary
             // 
@@ -211,7 +216,7 @@ namespace WindowsFormsApp1
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -231,6 +236,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox salary_employeeID;
         private System.Windows.Forms.Button salary_clearBtn;
         private System.Windows.Forms.Button salary_updateBtn;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }

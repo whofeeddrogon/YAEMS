@@ -1,3 +1,1 @@
-﻿
-
-SELECT * FROM employees
+﻿select * from employees

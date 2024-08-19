@@ -71,7 +71,6 @@ namespace WindowsFormsApp1
             this.label6.Size = new System.Drawing.Size(242, 21);
             this.label6.TabIndex = 10;
             this.label6.Text = "Employee Management System";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // login_signupBtn
             // 
@@ -101,7 +100,6 @@ namespace WindowsFormsApp1
             this.label5.Size = new System.Drawing.Size(176, 21);
             this.label5.TabIndex = 0;
             this.label5.Text = "Register Your Account";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // exit
             // 
@@ -161,7 +159,6 @@ namespace WindowsFormsApp1
             this.login_password.PasswordChar = '*';
             this.login_password.Size = new System.Drawing.Size(261, 30);
             this.login_password.TabIndex = 6;
-            this.login_password.TextChanged += new System.EventHandler(this.login_password_TextChanged);
             // 
             // login_btn
             // 

@@ -19,9 +19,6 @@ namespace WindowsFormsApp1
         public string Position { set; get; }
         public string Status { set; get; }
         public int Salary { set; get; }
-        
-        
-
 
         SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\berkayb\Documents\employee.mdf;Integrated Security=True;Connect Timeout=30");
 
@@ -110,7 +107,5 @@ namespace WindowsFormsApp1
             }
             return listdata;
         }
-
     }
-
 }

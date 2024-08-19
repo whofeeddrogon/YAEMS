@@ -19,17 +19,6 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -45,11 +34,6 @@ namespace WindowsFormsApp1
         private void login_show_Pass_CheckedChanged(object sender, EventArgs e)
         {
             login_password.PasswordChar = login_show_Pass.Checked ? '\0' : '*';
-            
-        }
-
-        private void login_password_TextChanged(object sender, EventArgs e)
-        {
             
         }
 

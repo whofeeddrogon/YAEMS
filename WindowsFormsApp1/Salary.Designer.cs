@@ -191,7 +191,6 @@ namespace WindowsFormsApp1
             this.dataGridView2.Size = new System.Drawing.Size(426, 396);
             this.dataGridView2.TabIndex = 3;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 

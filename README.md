@@ -1,61 +1,67 @@
-## YAEMS (Yet Another Employee Management System)
+# YAEMS (Yet Another Employee Management System)
 
-Simple **Windows Forms** employee management app. You can register/sign in users, add/update/delete employees, and edit salary information.
+A simple **Windows Forms** employee management application built to explore the .NET ecosystem and WinForms development.
 
-### Features
+## Overview
 
-- User registration and sign-in
-- Add / update / “soft delete” employees (via `delete_date`)
-- Basic counters on the dashboard
-- Salary updates
+This project serves as a learning exercise for .NET Framework and Windows Forms applications. It provides basic functionality to manage employees, users, and salaries.
 
-### Requirements
+## Features
 
-- Windows
-- Visual Studio 2019/2022
-- .NET Framework 4.7.2 (target framework)
-- SQL Server LocalDB (or SQL Server)
+- **User Management**: Registration and Sign-in functionality.
+- **Employee Management**: Add, update, and "soft delete" employees.
+- **Dashboard**: View basic statistics and counters.
+- **Salary Management**: Edit and update employee salary information.
+- **Auto-Schema Initialization**: The application automatically checks and creates necessary database tables on startup.
 
-### Setup & Run
+## Requirements
 
-1) Open the solution: [YAEMS.sln](YAEMS.sln)
-2) There are no NuGet packages; you can build directly.
-3) Set the start-up project to: **YAEMS.WinForms**
-4) Run.
+- Windows OS
+- Visual Studio 2019 or 2022
+- .NET Framework 4.7.2
+- SQL Server LocalDB (or full SQL Server instance)
 
-### Database
+## Setup & Installation
 
-The app uses the `users` and `employees` tables. Example (minimal) schema:
+1.  **Clone or Download** the repository.
+2.  Open the solution file: YAEMS.sln in Visual Studio.
+3.  **Database Configuration**:
+    - The project includes a DatabaseBootstrapper that automatically creates the required tables (users, employees) if they do not exist.
+    - Ensure the connection string in YAEMS.WinForms/App.config points to a valid SQL Server instance or LocalDB file.
+4.  **Build & Run**:
+    - Set YAEMS.WinForms as the startup project.
+    - Build the solution.
+    - Run the application. The database schema will be initialized automatically.
 
-```sql
-CREATE TABLE users (
-	id INT IDENTITY(1,1) PRIMARY KEY,
-	username NVARCHAR(50) NOT NULL UNIQUE,
-	password NVARCHAR(255) NOT NULL,
-	date_register DATE NOT NULL
-);
+## Database Schema
 
-CREATE TABLE employees (
-	id INT IDENTITY(1,1) PRIMARY KEY,
-	employee_id NVARCHAR(50) NOT NULL UNIQUE,
-	full_name NVARCHAR(100) NOT NULL,
-	gender NVARCHAR(20) NOT NULL,
-	contact_number NVARCHAR(30) NOT NULL,
-	position NVARCHAR(50) NOT NULL,
-	salary DECIMAL(18,2) NOT NULL DEFAULT 0,
-	insert_date DATE NULL,
-	update_date DATE NULL,
-	delete_date DATE NULL,
-	status NVARCHAR(20) NOT NULL
-);
-```
+The application manages the schema automatically via DatabaseBootstrapper.cs.
 
-### Connection String (Important)
+### Users Table (users)
 
-The connection string is managed in a single place: [YAEMS.WinForms/App.config](YAEMS.WinForms/App.config)
+| Column | Type | Constraints | Description |
+| :--- | :--- | :--- | :--- |
+| id | INT | PK, Identity | Unique record identifier |
+| username | NVARCHAR(50) | Unique, Not Null | User login name |
+| password | NVARCHAR(255) | Not Null | User password (plain text for demo) |
+| date_register | DATE | Not Null | Registration date |
 
-Update the `YaemsDb` connection string for your machine (especially `AttachDbFilename=...`).
+### Employees Table (employees)
 
-### Notes
+| Column | Type | Constraints | Description |
+| :--- | :--- | :--- | :--- |
+| id | INT | PK, Identity | Unique record identifier |
+| employee_id | NVARCHAR(50) | Unique, Not Null | Employee public ID |
+| Full_name | NVARCHAR(100) | Not Null | Full name |
+| gender | NVARCHAR(20) | Not Null | Gender |
+| contact_number | NVARCHAR(30) | Not Null | Contact phone number |
+| position | NVARCHAR(50) | Not Null | Job position |
+| salary | INT | Default 0 | Monthly salary |
+| insert_date | DATE | Nullable | Record creation date |
+| update_date | DATE | Nullable | Last update date |
+| delete_date | DATE | Nullable | Soft delete date |
+| status | NVARCHAR(20) | Not Null | Employment status |
 
-- This project is for learning purposes. Passwords are currently stored as plain text; in a real project, use hashing + salting.
+## Notes
+
+- **Security Warning**: Passwords are currently stored as plain text for simplicity. In a production environment, always use hashing and salting.

@@ -14,6 +14,21 @@ namespace YAEMS.WinForms
         [STAThread]
         static void Main()
         {
+            try
+            {
+                DatabaseBootstrapper.EnsureSchema();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Database initialization failed.\n\n" + ex.Message,
+                    "Error Message",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+                return;
+            }
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoginForm());

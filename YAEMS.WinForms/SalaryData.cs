@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace YAEMS.WinForms
 {
@@ -18,7 +19,7 @@ namespace YAEMS.WinForms
         public string Position { set; get; } // 4
         public int Salary { set; get; } // 5
 
-        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\berkayb\Documents\employee.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["YaemsDb"].ConnectionString);
 
         public List<SalaryData> salaryEmployeeListData()
         {
